@@ -14,6 +14,15 @@ class Team
      */
     private $numberOfPlayers;
 
+    /**
+     * @var object
+     */
+    public $joinedPlayers;
+
+    /**
+     * Team constructor.
+     * @param int $numberOfPlayers
+     */
     public function __construct(int $numberOfPlayers)
     {
         $this->numberOfPlayers = $numberOfPlayers;
@@ -42,6 +51,31 @@ class Team
     {
         $this->numberOfPlayers = $numberOfPlayers;
     }
+
+    /**
+     * @return object
+     */
+    public function getJoinedPlayers(): object
+    {
+        return $this->joinedPlayers;
+    }
+
+    /**
+     * @param object $joinedPlayers
+     */
+    public function setJoinedPlayers(object $joinedPlayers): void
+    {
+        $this->joinedPlayers = $joinedPlayers;
+    }
+
+    /**
+     * @param object $player
+     */
+    public function joinPlayer(object $player) {
+
+    }
+
+
 
 
 

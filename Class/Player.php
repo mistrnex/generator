@@ -19,6 +19,11 @@ class Player
      */
     private $rating;
 
+    /**
+     * Player constructor.
+     * @param string $name
+     * @param int $rating
+     */
     public function __construct(string $name, int $rating)
     {
         $this->name = $name;

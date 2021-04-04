@@ -11,12 +11,12 @@ class GeneratorRobin extends Generator
     /**
      * @var int
      */
-    private $type;
+    private int $type;
 
     /**
      * @var int
      */
-    private $numberOfRounds;
+    private int $numberOfRounds;
 
     /**
      * GeneratorRobin constructor.
@@ -62,10 +62,13 @@ class GeneratorRobin extends Generator
     }
 
     /**
+     * Prepare round robin plan of matches
+     *
      * @param int $numberOfRounds
      * @param int $type
+     * @return array
      */
-    public function generatePlan(int $numberOfRounds, int $type)
+    public function generatePlan(int $numberOfRounds, int $type) : array
     {
 
     }
